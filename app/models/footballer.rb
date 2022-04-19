@@ -1,0 +1,2 @@
+class Footballer < ApplicationRecord
+end

@@ -1,7 +1,26 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Footballer.create(
+  [
+    {name: "メッシ", age: 34 },
+    {name: "ロナウド", age: 37 },
+    {name: "エンバぺ", age: 23 },
+    {name: "ハーランド", age: 21 },
+    {name: "サラー", age: 30 },
+    {name: "マネ", age: 30 },
+    {name: "デブライネ", age: 30 },
+    {name: "南野", age: 27 },
+    {name: "ベンゼマ", age: 34 },
+    {name: "ぺドリ", age: 19 },
+    {name: "久保", age: 20 },
+    {name: "フォーデン", age: 21 },
+    {name: "ジョタ", age: 25 },
+    {name: "デンベレ", age: 24 },
+    {name: "ネイマール", age: 29 },
+    {name: "コウチーニョ", age: 29 },
+    {name: "エトー", age: 41 },
+    {name: "シャビ", age: 42 },
+    {name: "イニエスタ", age: 39 },
+    {name: "プジョル", age: 44 },
+    {name: "アグエロ", age: 33 },
+    {name: "オーバメヤン", age: 32 },
+  ]
+)

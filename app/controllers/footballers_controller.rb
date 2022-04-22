@@ -2,7 +2,9 @@ class FootballersController < ApplicationController
   before_action :set_footballer, only: %i[ show edit update destroy ]
 
   def index
-    @footballers = Footballer.page(params[:page])
+    @search = Footballer.ransack(params[:q])
+    @search.sorts = 'id desc' if @search.sorts.empty?
+    @footballers = @search.result.page(params[:page])
   end
 
   def show

@@ -21,7 +21,7 @@ class FootballersController < ApplicationController
     @footballer = Footballer.new(footballer_params)
 
     if @footballer.save
-      redirect_to @footballer, notice: "Footballer was successfully created."
+      redirect_to @footballer, notice: "サッカー選手を登録しました。"
     else
       render :new, status: :unprocessable_entity
     end
@@ -29,7 +29,7 @@ class FootballersController < ApplicationController
 
   def update
     if @footballer.update(footballer_params)
-      redirect_to @footballer, notice: "Footballer was successfully updated."
+      redirect_to @footballer, notice: "サッカー選手を更新しました。"
     else
       render :edit, status: :unprocessable_entity
     end
@@ -37,7 +37,7 @@ class FootballersController < ApplicationController
 
   def destroy
     @footballer.destroy
-    redirect_to footballers_url, notice: "Footballer was successfully destroyed."
+    redirect_to footballers_url, notice: "サッカー選手を削除しました。"
   end
 
   private

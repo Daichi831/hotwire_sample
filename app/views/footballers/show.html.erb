@@ -1,10 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<div id="<%= dom_id @footballer %>">
+  <p>
+    <strong>名前:</strong>
+    <%= @footballer.name %>
+  </p>
 
-<%= render @footballer %>
+  <p>
+    <strong>年齢:</strong>
+    <%= @footballer.age %>
+  </p>
 
 <div>
-  <%= link_to "Edit this footballer", edit_footballer_path(@footballer) %> |
-  <%= link_to "Back to footballers", footballers_path %>
+  <%= link_to "編集", edit_footballer_path(@footballer) %> |
+  <%= link_to "戻る", footballers_path %>
 
-  <%= button_to "Destroy this footballer", @footballer, method: :delete %>
+  <%= button_to "削除", @footballer, method: :delete %>
 </div>

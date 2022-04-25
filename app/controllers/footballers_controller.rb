@@ -37,7 +37,7 @@ class FootballersController < ApplicationController
 
   def destroy
     @footballer.destroy
-    redirect_to footballers_url, notice: "サッカー選手を削除しました。"
+    flash.now.notice = "サッカー選手を削除しました。"
   end
 
   private

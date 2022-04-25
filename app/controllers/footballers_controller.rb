@@ -21,7 +21,7 @@ class FootballersController < ApplicationController
     @footballer = Footballer.new(footballer_params)
 
     if @footballer.save
-      redirect_to @footballer, notice: "サッカー選手を登録しました。"
+      flash.now.notice = "サッカー選手を登録しました。"
     else
       render :new, status: :unprocessable_entity
     end

@@ -29,7 +29,7 @@ class FootballersController < ApplicationController
 
   def update
     if @footballer.update(footballer_params)
-      redirect_to @footballer, notice: "サッカー選手を更新しました。"
+      flash.now.notice = "サッカー選手を更新しました。"
     else
       render :edit, status: :unprocessable_entity
     end

@@ -55,12 +55,11 @@
           <%= link_to icon_with_text("plus-circle", "登録"),
                       new_footballer_path,
                       class: "btn btn-outline-primary",
-                      data: { turbo_frame: "new_footballer" }
+                      data: { turbo_frame: "modal" }
           %>
         </div>
       </div>
 
-      <%= turbo_frame_tag "new_footballer" %>
       <div id="footballers">
         <%= render @footballers %>
       </div>

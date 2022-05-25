@@ -1,1 +1,4 @@
 <%= turbo_stream_flash %>
+<%= turbo_stream.replace @footballer do %>
+  <%= render partial: "footballers/footballer", locals: { footballer: @footballer } %>
+<% end %>
